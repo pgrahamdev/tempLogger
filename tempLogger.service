@@ -1,0 +1,13 @@
+[Unit]
+Description=DHT22 Temperature Logger
+
+[Service]
+WorkingDirectory=/opt/tempLogger/logs
+User=pi
+Group=pi
+ExecStart=/usr/local/bin/tempLogger -config /opt/tempLogger/tempLogger.json
+Restart=on-failure
+Type=exec
+
+[Install]
+WantedBy=multi-user.target

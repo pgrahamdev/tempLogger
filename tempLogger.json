@@ -1,0 +1,6 @@
+{
+    "ID": "sensor1",
+    "SerialPath": "/dev/ttyACM0",
+    "Baud": 9600,
+    "Retries": 60
+}

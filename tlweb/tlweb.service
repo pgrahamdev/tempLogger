@@ -1,0 +1,13 @@
+[Unit]
+Description=Temperature Logger Web Service
+
+[Service]
+WorkingDirectory=/home/paul/logs/tempLogger
+User=paul
+Group=paul
+ExecStart=/usr/local/bin/tlweb logs logs-USB0
+Restart=on-failure
+Type=exec
+
+[Install]
+WantedBy=multi-user.target
